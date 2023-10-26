@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".update"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:layout_width="360sp"
+        android:layout_height="499sp"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        android:background="@color/b_white"
+        >
+
+        <EditText
+            android:layout_width="255sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:hint="Title"
+            android:id="@+id/ed1"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="249dp"
+            android:layout_height="314dp"
+            android:layout_below="@id/ed1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:hint="Your note here"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:gravity="top"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/baseline_save_24"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5sp"
+            android:onClick="save"
+            android:id="@+id/update"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/baseline_delete_24"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5sp"
+            android:onClick="delete"
+            android:id="@+id/delete"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

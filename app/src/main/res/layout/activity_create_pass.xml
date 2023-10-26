@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".create_pass">
+
+    <RelativeLayout
+        android:layout_width="330sp"
+        android:layout_height="490sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/b_white">
+        <EditText
+            android:layout_width="205sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100sp"
+            android:hint="Set password"
+            android:id="@+id/ed1"
+        />
+        <EditText
+            android:layout_below="@id/ed1"
+            android:layout_width="205sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:hint="Confirm password"
+            android:id="@+id/ed2"
+            />
+        <Button
+            android:layout_below="@id/ed2"
+            android:layout_width="205sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100sp"
+            android:text="Submit"
+            android:backgroundTint="@color/orange"
+            android:id="@+id/bt1"
+            android:onClick="validate"
+            />
+    </RelativeLayout>
+</RelativeLayout>

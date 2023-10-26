@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".home">
+
+    <RelativeLayout
+        android:layout_width="330sp"
+        android:layout_height="490sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/b_white">
+        <EditText
+            android:layout_width="255sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:hint="Title"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:id="@+id/ed1"
+            />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="249dp"
+            android:layout_height="314dp"
+            android:layout_below="@id/ed1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:hint="Your note here"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:gravity="top"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_save_24"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:onClick="save"
+            />
+    </RelativeLayout>
+</RelativeLayout>
